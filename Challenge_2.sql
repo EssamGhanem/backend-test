@@ -10,7 +10,7 @@ ORDER BY price ASC
 LIMIT 10 OFFSET ((:page_number - 1) * 10);
 
 -- we can create index using this :
-CREATE INDEX idx_price_category ON product (price, category);
+CREATE INDEX idx_price_category ON products (price, category);
 -- creating a composite index on these columns can significantly speed up the queries.
 
 
